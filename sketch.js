@@ -11,8 +11,8 @@ var slingShot;
 var fruit;
 function preload(){
   backgroundImg = loadImage("background.png");
- fruit=loadImage("melon.png");
- g=loadImage("basket.png")
+  //Cargar imagenes de fruta y canasta (g)
+
 }
 function setup() {
   createCanvas(900,400);
@@ -23,11 +23,11 @@ function setup() {
   
  
 
-  //Challenge1:
-  ball = Bodies.(50,200,20);
-  World.add(world,ball);
-//challenge 2
-  slingShot = new Slingshot();
+  //Crear cuerpo circular
+
+  
+//Crear slingShot
+  
 
 }
 function draw() {
@@ -39,17 +39,11 @@ function draw() {
   ground.display();
   g.scale=.025;
 
-
   imageMode(CENTER)
-  image(fruit ,ball.position.x,ball.position.y,40,40);
-  image(g,450,270)
+    //Mostrar imagenes de fruta y canasta (g)
 
-  slingShot.display();
+  //slingShot.display();
 }
-function mouseDragged(){
-  Matter.Body.setPosition();
-}
-function mouseReleased(){
-  slingShot.fly();
+//Crear function mouseDragged
 
-}
+//Crear function mouseReleased
